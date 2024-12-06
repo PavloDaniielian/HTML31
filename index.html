@@ -26,6 +26,7 @@
 
     <!-- CSS -->
     <link rel='stylesheet' href='css/nav1.css'>
+    <script src="js/nav1.js"></script>
     <link rel='stylesheet' href='css/main.css'>
 </head>
 
@@ -81,7 +82,7 @@
 
 <section id="section1" class="section1">
     <img class="section1-img1" src="assets/images/img1.jpg">
-    <div class="section1-title">
+    <div class="section1-title" id="page-title">
         <span style="color:#a77d32;">Digital solutions</span> to<BR>create an inclusive<BR>economy.
     </div>
 </section>
@@ -255,9 +256,7 @@
 <script>
     window.addEventListener('load', () => {
         let element;
-        element = document.querySelector('.frame14-text');
-        element.classList.add('loaded'); // Add the "loaded" class to trigger the fade-in
-        element = document.querySelector('.frame14-image1');
+        element = document.querySelector('.section1-title');
         element.classList.add('loaded'); // Add the "loaded" class to trigger the fade-in
 
         // let s = '';
@@ -269,6 +268,13 @@
         // s += window.matchMedia("(orientation: portrait)").matches + "; "
         // document.getElementById("page-title").innerHTML = s;
     });
+
+    function onHover_dropdownMenu(){
+        document.getElementById("page-title").innerHTML = "hover";
+    }
+    function onOver_dropdownMenu(){
+        document.getElementById("page-title").innerHTML = "hover";
+    }
 
     // function applyEngishGuide(){
     //     document.getElementById("text-guide").innerHTML = "A personal pocket-style guide that has been built for your with a mixture of fashion, science, and behaviour analysis to help you embrace your inner light and character to become unapologetically yourself.";

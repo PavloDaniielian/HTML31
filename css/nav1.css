@@ -27,6 +27,7 @@
   }
   .nav-link { 
     color: white;
+    transition: color 0.3s ease; /* Smooth animation */
   }
   .nav-link.active, .nav-link:hover { 
     color: #a77d32;
@@ -34,22 +35,27 @@
   .dropdown-menu {
     background: #a77d32;
   }
+  /* Ensure the "Our Portfolio" link remains #a77d32 when its submenu is hovered */
+  .nav-item.dropdown:hover > .nav-link {
+    color: #a77d32;
+  }
   .nav-link {
     position: relative;
   }
   .nav-link::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 6px; /* Position the underline just below the text */
-      width: 0;
-      height: 2px; /* Thickness of the underline */
-      background-color: #d9d9d9; /* Underline color */
-      transition: width 0.3s ease-in-out; /* Smooth animation */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 6px; /* Position the underline just below the text */
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #d9d9d9; /* Underline color */
+    transition: width 0.3s ease-in-out; /* Smooth animation */
   }
   .nav-link:hover::after, .dropdown:hover > .nav-link::after {
-      width: 100%; /* Extend the underline */
+    width: 100%; /* Extend the underline */
   }
+
   /* Open dropdown on hover */
   .dropdown:hover .dropdown-menu {
     display: block;

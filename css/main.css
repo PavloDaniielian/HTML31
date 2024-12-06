@@ -50,6 +50,13 @@ body {
   position: absolute;
   left: 64px;
   top: 47vh;
+  opacity: 0; /* Initially transparent */
+  transform: translateX(-500px); /* Slight downward shift */
+  transition: opacity 1s ease, transform 1s ease; /* Smooth transition for both */
+}
+.section1-title.loaded {
+  opacity: 1; /* Fully visible */
+  transform: translateX(0); /* Reset position */
 }
 
 /* Mobile Styles */
