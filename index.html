@@ -25,56 +25,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel='stylesheet' href='css/general.css'>
+    <link rel='stylesheet' href='css/nav1.css'>
     <link rel='stylesheet' href='css/main.css'>
 </head>
 
 <body style="margin:0">
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-        <!-- Toggler for mobile view -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <!-- Toggler for mobile view (aligned to the right) -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+            MENU<span class="navbar-toggler-icon"></span>
         </button>
-        
-        <!-- Navigation Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="navbarDropdown">
-                        Our Portfolio<span class="caret"></span></a>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">SeeMeSave</a></li>
-                        <li><a class="dropdown-item" href="#">Margins</a></li>
-                        <!-- <li><hr class="dropdown-divider"></li> -->
-                        <li><a class="dropdown-item" href="#">Jozi Street</a></li>
-                        <li><a class="dropdown-item" href="#">Jozi Street News</a></li>
-                        <li><a class="dropdown-item" href="#">Wonder Card</a></li>
-                        <li><a class="dropdown-item" href="#">e-Commons</a></li>
-                        <li><a class="dropdown-item" href="#">Anoki Air</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Investor</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
-            </ul>
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- Navigation Links -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown">
+                            Our Portfolio<span class="caret"></span></a>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">SeeMeSave</a></li>
+                            <li><a class="dropdown-item" href="#">Margins</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="#">Jozi Street</a></li>
+                            <li><a class="dropdown-item" href="#">Jozi Street News</a></li>
+                            <li><a class="dropdown-item" href="#">Wonder Card</a></li>
+                            <li><a class="dropdown-item" href="#">e-Commons</a></li>
+                            <li><a class="dropdown-item" href="#">Anoki Air</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Investor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
 
 <section id="section1" class="section1">
-    <img class="section1-img-mask" src="assets/images/img1-mask.svg">
+    <img class="section1-img1" src="assets/images/img1.jpg">
     <div class="section1-title">
         <span style="color:#a77d32;">Digital solutions</span> to<BR>create an inclusive<BR>economy.
     </div>

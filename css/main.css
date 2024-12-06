@@ -5,6 +5,7 @@ body {
   text-align: center;
 }
 
+
 .mark-big {
   display: block;
   position: absolute;
@@ -16,91 +17,11 @@ body {
   max-width: 50vh;
   position: absolute;
 }
-
-.navbar {
-  height: 19.3vh;
-  background-color: black;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  color: white;
-  padding-right: 20px;
-}
-
-
-.navbar li a, .navbar .navbar-brand { 
-  color: #d5d5d5 !important;
-}
-.navbar-nav li a:hover {
-  color: #fff !important;
-}
-.navbar-nav li.active a {
-  color: #fff !important;
-  background-color: #29292c !important;
-}
-.navbar-default .navbar-toggle {
-  border-color: transparent;
-}
-.open .dropdown-toggle {
-  color: #fff;
-  background-color: #555 !important;
-}
-.dropdown-menu li a {
-  color: #000 !important;
-}
-.dropdown-menu li a:hover {
-  background-color: red !important;
-}
-
-/* Change color for active menu item */
-.navbar-nav .nav-link.active {
-    color: #a77d32; /* Active link color */
-    font-weight: bold; /* Optional: make it bold for emphasis */
-}
-.navbar-nav .nav-link {
-    color: white;
-}
-.nav-link:focus, .nav-link:hover, .navbar-nav, .nav-link:hover::after, .dropdown:hover > .nav-link::after, .dropdown.show > .nav-link {
-    color: #a77d32;
-}
-.navbar-nav>li.hover>a {
-    color: #a77d32;
-}
-
-/* Change hover color for submenu links */
-.dropdown-menu .dropdown-item:hover {
-    color: #ffffff; /* Submenu item hover text color */
-    background-color: #a77d32; /* Submenu item hover background color */
-}
-    
-/* Open dropdown on hover */
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-.dropdown-menu {
-    margin-top: 0; /* Prevent extra margin from Bootstrap */
-}
-/* Add underline effect on hover */
-.navbar-nav .nav-link {
-    position: relative;
-}
-.navbar-nav .nav-link::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 6px; /* Position the underline just below the text */
-    width: 0;
-    height: 2px; /* Thickness of the underline */
-    background-color: #d9d9d9; /* Underline color */
-    transition: width 0.3s ease-in-out; /* Smooth animation */
-}
-.navbar-nav .nav-link:hover::after, .dropdown:hover > .nav-link::after {
-    width: 100%; /* Extend the underline */
-}
-/* Increase spacing between menu items */
-.navbar-nav .nav-item {
-    margin-right: 20px; /* Adjust spacing as needed */
+/* Mobile Styles */
+@media (max-width: 1000px) {
+  .mark-big img {
+    max-width: 50vw;
+  }
 }
 
 
@@ -113,11 +34,8 @@ body {
   height: calc(100vh - 19.3vh);
 }
 
-.section1-img-mask {
-  position:absolute;
-  left: -15px;
-  top: 19.3vh;
-  max-height: calc(100vh - 19.3vh);
+.section1-img1 {
+  display: none;
 }
 
 .section1-title {
@@ -129,9 +47,30 @@ body {
   line-height: 65px;
   color: white;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
-  position:absolute;
+  position: absolute;
   left: 64px;
   top: 47vh;
+}
+
+/* Mobile Styles */
+@media (max-width: 1000px) {
+  .section1 {
+    background-image: none;
+    padding: 0;
+    height: auto;
+  }
+  .section1-img1 {
+    display: block;
+    width: 100%;
+  }
+  .section1-title {
+    font-size: 7.5vw;
+    line-height: 8.1vw;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 30px 0 35px 64px;
+  }
 }
 
 
