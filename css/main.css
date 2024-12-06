@@ -1,0 +1,540 @@
+/* General Section Styling */
+body {
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.mark-big {
+  display: block;
+  position: absolute;
+  top: 0;
+  text-align: left;
+  float: left;
+}
+.mark-big img {
+  max-width: 50vh;
+  position: absolute;
+}
+
+.navbar {
+  height: 19.3vh;
+  background-color: black;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  padding-right: 20px;
+}
+
+
+.navbar li a, .navbar .navbar-brand { 
+  color: #d5d5d5 !important;
+}
+.navbar-nav li a:hover {
+  color: #fff !important;
+}
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color: #29292c !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+.open .dropdown-toggle {
+  color: #fff;
+  background-color: #555 !important;
+}
+.dropdown-menu li a {
+  color: #000 !important;
+}
+.dropdown-menu li a:hover {
+  background-color: red !important;
+}
+
+/* Change color for active menu item */
+.navbar-nav .nav-link.active {
+    color: #a77d32; /* Active link color */
+    font-weight: bold; /* Optional: make it bold for emphasis */
+}
+.navbar-nav .nav-link {
+    color: white;
+}
+.nav-link:focus, .nav-link:hover, .navbar-nav, .nav-link:hover::after, .dropdown:hover > .nav-link::after, .dropdown.show > .nav-link {
+    color: #a77d32;
+}
+.navbar-nav>li.hover>a {
+    color: #a77d32;
+}
+
+/* Change hover color for submenu links */
+.dropdown-menu .dropdown-item:hover {
+    color: #ffffff; /* Submenu item hover text color */
+    background-color: #a77d32; /* Submenu item hover background color */
+}
+    
+/* Open dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    margin-top: 0; /* Prevent extra margin from Bootstrap */
+}
+/* Add underline effect on hover */
+.navbar-nav .nav-link {
+    position: relative;
+}
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 6px; /* Position the underline just below the text */
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #d9d9d9; /* Underline color */
+    transition: width 0.3s ease-in-out; /* Smooth animation */
+}
+.navbar-nav .nav-link:hover::after, .dropdown:hover > .nav-link::after {
+    width: 100%; /* Extend the underline */
+}
+/* Increase spacing between menu items */
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+
+.section1 {
+  background-image: url(../assets/images/img1.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding: 28vh 70px 0 70px;
+  height: calc(100vh - 19.3vh);
+}
+
+.section1-img-mask {
+  position:absolute;
+  left: -15px;
+  top: 19.3vh;
+  max-height: calc(100vh - 19.3vh);
+}
+
+.section1-title {
+  text-align: left;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 65px;
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+  position:absolute;
+  left: 64px;
+  top: 47vh;
+}
+
+
+.section2 {
+  background: #a77d32;
+  padding: 35px 4.5vw 35px 4.5vw;
+}
+
+.section2-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 52px;
+  color: #FFFFFF;
+}
+
+.section2-text {
+  margin-top: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* Container for columns */
+.section2-cols-container {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 4.8vw; /* Adds spacing between boxes */
+}
+
+/* Each column box */
+.section2-col {
+  flex: 1 1 calc(33.33% - 4.8vw); /* 3 columns, subtract gap */
+  padding: 8px;
+  text-align: center;
+  background-color: black;
+  border-radius: 15px; /* Makes the box rounded */
+}
+
+/* Mobile Styles: 1 column */
+@media (max-width: 1000px) {
+  .section2-col {
+    flex: 1 1 100%; /* Full width */
+  }
+}
+
+.section2-col-icon {
+  width: 65%;
+  margin-top: 20px;
+}
+
+.section2-col div {
+  margin-top: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+
+.section3 {
+  background: #0e0e0e;
+  padding: 35px 0 35px 0;
+}
+
+/* Container for columns */
+.section3-cols-container {
+  margin: 0 4.5vw 0 4.5vw;
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 4.8vw; /* Adds spacing between boxes */
+}
+
+/* Each column box */
+.section3-col {
+  flex: 1 1 calc(33.33% - 4.8vw); /* 3 columns, subtract gap */
+  text-align: left;
+}
+
+.section3-col-sta1 {
+  width: 83%;
+  margin-top: 50px;
+}
+
+.section3-col-sta2 {
+  width: 83%;
+  margin-top: 20px;
+}
+
+.section3-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 67px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.section3-col-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: left;
+  color: white;
+}
+
+.section3-right-bar {
+  float: right;
+  margin-right: -4.5vw;
+  width: 140px; /* Sets the bar's width */
+  height: 600px; /* Matches the full height of .section3 */
+  background: #A77D32; /* Sets the background color */
+}
+
+.section3-col-img1 {
+  position: absolute;
+  width: calc((100vw - 4.8vw - 4.8vw - 4.5vw - 4.5vw) / 3);
+  margin-left: 20px
+}
+
+/* Mobile Styles: 1 column */
+@media (max-width: 1000px) {
+  .section3-col {
+    flex: 1 1 100%; /* Full width */
+  }
+  .section3-right-bar {
+    height: 1000px;
+    display: none;
+  }
+  .section3-col-img1 {
+    position: relative;
+    width: 85vw;
+  }
+}
+
+
+.section4 {
+  background: black;
+  padding: 35px 0 35px 0;
+}
+
+/* Container for columns */
+.section4-cols-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 4.8vw; /* Adds spacing between boxes */
+  margin-left: 4.5vw;
+}
+
+/* Each column box */
+.section4-col {
+  flex: 1;
+  min-width: 400px;
+  box-sizing: border-box;
+}
+
+.section4-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 67px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.section4-col-text {
+  margin-top: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: left;
+  color: white;
+}
+
+.section4-col-img1 {
+  width: 100%;
+}
+
+/* Mobile Styles: 1 column */
+@media (max-width: 1000px) {
+  .section4-cols-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+  .section4-col {
+    min-width: 0;
+  }
+}
+
+
+.section5 {
+  background: black;
+  padding: 35px 4.5vw 35px 4.5vw;
+}
+
+/* Container for columns */
+.section5-cols-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 4.8vw; /* Adds spacing between boxes */
+}
+
+/* Each column box */
+.section5-col {
+  flex: 1;
+  min-width: 400px;
+  box-sizing: border-box;
+}
+
+.section5-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 67px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.section5-col-text {
+  margin-top: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: left;
+  color: white;
+}
+
+.section5-col-img1 {
+  width: 100%;
+  padding: 30px 0 0 30px;
+}
+
+/* Mobile Styles: 1 column */
+@media (max-width: 1000px) {
+  .section5-cols-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+  .section5-col {
+    min-width: 0;
+  }
+  .section5-col-img1 {
+    width: 100%;
+    padding: 0 0 0 0;
+  }
+}
+
+
+.section6 {
+  background: #d9d9d9;
+  padding-bottom: 60px;
+}
+
+.section6-back {
+  background: black;
+  height: calc(35px + 25vw);
+}
+
+.section6-img1 {
+  margin-top: -25vw;
+  width: 100%;
+  padding: 0 4.5vw 0 4.5vw;
+}
+
+.section6-title {
+  margin-top: 45px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 44px;
+  text-align: center;
+  color: #A77D32;
+  padding: 0 17vw;
+}
+
+.section6-text {
+  margin-top: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: center;
+  color: black;
+}
+
+.section6-text {
+  margin-top: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: center;
+  color: black;
+}
+
+.section6-subscript-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically if needed */
+}
+
+.section6-subscribe {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  background: #a77d32;
+  color: white;
+  padding: 1px 1px 1px 15px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center; /* Vertically aligns content inside the box */
+  gap: 10px; /* Adds space between the text and input */
+}
+
+.section6-subscript-input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #d9d9d9;
+  background: #d9d9d9;
+  border-radius: 3px;
+}
+
+
+.footer {
+  background: black;
+  padding: 35px 4.5vw 35px 4.5vw;
+}
+
+/* Container for columns */
+.footer-cols-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 4.8vw; /* Adds spacing between boxes */
+}
+
+/* Each column box */
+.footer-col {
+  flex: 1 1 calc( (100% - 3 * 4.8vw) / 4 ); /* 1: flexible, 1: base size, 22% for 4 columns */
+}
+
+.footer-col-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.footer-col-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 34px;
+  text-align: left;
+  color: white;
+}
+
+.footer-text {
+  margin-top: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: center;
+  color: white;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #d9d9d9;
+  text-decoration: underline;
+}
+
+/* Mobile Styles: 1 column */
+@media (max-width: 1000px) {
+  .footer-col {
+    flex: 1 1 calc( (100% - 4.8vw) / 2 ); /* 2 columns on medium screens */
+  }
+}
